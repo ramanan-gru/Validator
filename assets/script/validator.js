@@ -6,7 +6,7 @@
 
 */
 
-var validatorAr = [{"key":"alphabet","test":"^[a-zA-Z]+$"},{"key":"alphanumeric","test":"^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$"},{"key":"alphanumericspecial","test":"^[-@./#&+\w\s]*$"},{"key":"alphanumericunder","test":"^[a-zA-Z0-9-_]+$"}];
+var validatorAr = [{"key":"alphabet","test":"^[a-zA-Z]+$"},{"key":"alphanumeric","test":"^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$"},{"key":"alphanumericspecial","test":"^[ A-Za-z0-9_@./#&+-]*$"},{"key":"alphanumericunder","test":"^[a-zA-Z0-9-_]+$"}];
 
 var validateForm = function(formObj){
 	let formElms = formObj.getElementsByTagName("input");
